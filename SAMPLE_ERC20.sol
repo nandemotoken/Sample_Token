@@ -545,7 +545,7 @@ contract ERC20Detailed is IERC20 {
 }
 
 contract Sample is ERC20 , ERC20Detailed {
-        constructor() ERC20Detailed("sample token", "SAMPL") public {
-        _mint(msg.sender, 10000 * 1000000000000000000 , 18);
+        constructor() ERC20Detailed("sample token", "SAMPL" ,18 ) public {
+        _mint(msg.sender, 10000 * 1000000000000000000);
         }
 }
