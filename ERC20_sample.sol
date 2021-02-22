@@ -710,6 +710,6 @@ contract ERC20 is Context, IERC20 {
 
 contract SAMPLE is ERC20 {
     constructor() public ERC20("sample token", "SAMPLE") {
-        _mint(_msgSender(), 10000 * 10e18);
+        _mint(_msgSender(), 10000 * 10e17);
     }
 }
