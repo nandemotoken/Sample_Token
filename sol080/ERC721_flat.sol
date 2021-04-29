@@ -1144,17 +1144,16 @@ abstract contract ERC721URIStorage is ERC721 {
 }
 
 
-contract sampleERC721 is ERC721Enumerable.sol , ERC721URIStorage {
+contract sampleERC721 is  ERC721URIStorage {
 
     constructor() ERC721("sample nft", "SAMPLE") {
     
-    _safemint(_msgSender() , 1);
+    _safeMint(_msgSender() , 1);
     _setTokenURI( 1 , "" );
 
     } 
 
 }
-
 
 
 
